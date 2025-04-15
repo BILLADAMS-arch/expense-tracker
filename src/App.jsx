@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ExpenseForm from './components/ExpenseForm';
-import SearchBar from './components/SearchBar';
-import ExpenseTable from './components/ExpenseTable';
+import ExpenseForm from './components/Expenseform';
+import SearchBar from './components/Searchbar';
+import ExpenseTable from './components/Expensetable';
 
 const App = () => {
   const [expenses, setExpenses] = useState([]);
