@@ -49,13 +49,13 @@ body {
 }
 
 .form-button:hover {
-  background-color: royalblue;
+  background-color: blue;
 }
 
 .search-bar {
   width: 100%;
   padding: 10px;
-  border: 1px solid lightsteelblue;
+  border: 1px solid white;
   border-radius: 6px;
   font-size: 1rem;
   margin-bottom: 20px;
@@ -68,18 +68,18 @@ body {
 }
 
 .table-header th {
-  background-color: dodgerblue;
+  background-color: blue;
   color: white;
   text-align: left;
   padding: 12px;
 }
 
 .table-row:nth-child(even) {
-  background-color: lavender;
+  background-color: white;
 }
 
 .table-row:hover {
-  background-color: lightcyan;
+  background-color: whitesmoke;
 }
 
 .data {
@@ -102,6 +102,6 @@ body {
 .app-description {
   text-align: center;
   font-size: 1rem;
-  color: steelblue;
+  color: blue;
   margin-bottom: 30px;
 }
