@@ -24,6 +24,7 @@ const App = () => {
   return (
     <div className="app-container">
       <h1 className="app-title">Expense Tracker</h1>
+      <p className="app-description">Track your spending habits and stay on top of your budget.</p>
       <ExpenseForm addExpense={addExpense} />
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <ExpenseTable expenses={filteredExpenses} deleteExpense={deleteExpense} />
