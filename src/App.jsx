@@ -11,6 +11,10 @@ const App = () => {
     setExpenses([...expenses, expense]);
   };
 
+  const deleteExpense = (indexToDelete) => {
+    setExpenses(expenses.filter((_, index) => index !== indexToDelete));
+  };
+
   const filteredExpenses = expenses.filter(
     (exp) =>
       exp.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -22,7 +26,7 @@ const App = () => {
       <h1 className="app-title">Expense Tracker</h1>
       <ExpenseForm addExpense={addExpense} />
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-      <ExpenseTable expenses={filteredExpenses} />
+      <ExpenseTable expenses={filteredExpenses} deleteExpense={deleteExpense} />
     </div>
   );
 };
