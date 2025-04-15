@@ -3,8 +3,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: aliceblue;
-  color: dimgray;
+  background-color: white;
+  color: gray;
 }
 
 .app-container {
@@ -32,7 +32,7 @@ body {
 
 .form-input {
   padding: 10px;
-  border: 1px solid lightsteelblue;
+  border: 1px solid whitesmoke;
   border-radius: 6px;
   font-size: 1rem;
 }
