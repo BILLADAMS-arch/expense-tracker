@@ -22,12 +22,19 @@ const ExpenseForm = ({ addExpense }) => {
 
   return (
     <form onSubmit={handleSubmit} className="form-container">
-      <input name="name" value={formData.name} onChange={handleChange} placeholder="Expense Name" className="form-input" />
+      <input name="name" value={formData.name} onChange={handleChange} placeholder="Name" className="form-input" />
       <input name="description" value={formData.description} onChange={handleChange} placeholder="Description" className="form-input" />
-      <input name="category" value={formData.category} onChange={handleChange} placeholder="Category" className="form-input" />
+      <select name="category" value={formData.category} onChange={handleChange} className="form-input">
+        <option value="">Select Category</option>
+        <option value="Groceries">Groceries</option>
+        <option value="Transport">Transport</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Bills and Utilities">Bills and Utilities</option>
+      </select>
       <input name="amount" value={formData.amount} onChange={handleChange} placeholder="Amount" type="number" className="form-input" />
       <input name="date" value={formData.date} onChange={handleChange} placeholder="Date" type="date" className="form-input" />
-      <button type="submit" className="form-button">Submit</button>
+      <button type="submit" className="form-button">Add Expense</button>
     </form>
   );
 };
